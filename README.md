@@ -15,7 +15,7 @@ We used a dataframe containing King County Housing information, which describes 
 
 First, we established a baseline model isolating sale price as the depend variable. Our first model was inaccurate, as shown by the low R squared score of .457. We then used log to improve the model and rid ourselves of outliers, which actually decreased R^2. Scrap it. To create a better model, we used the kitchen sink approach. After setting a standard scaler and transformer, the model improved, returning a R^2 of .827. After logging it, our final model returned R^2 of .86. This means that our model, which includes bedrooms, living area (sq. feet), lot area, condition, year built, zipcode, size of neighbors lots, size of basement, has a basement, and grade group (1-3), can explain about 86% of variance for price. 
 
-##Results
+## Results
 
 ![Housing regression model](https://user-images.githubusercontent.com/106109221/177225935-1c014b53-3c72-4af5-a6ed-1aeb585af104.png)
 
@@ -27,11 +27,11 @@ Additionally, we found that the zipcode with the lowest average sale price ($234
 
 ![cheap zipcode seatlle housing](https://user-images.githubusercontent.com/106109221/177226324-bb730fd9-c843-4921-b2ac-3b399e1b5896.png)
 
-##Recommendations
+## Recommendations
 
 The data shows that Seattle Home Flippers should concentrate on size primarily; the more area they can provide, the more the house will sell for. Also, they should look into investing in homes in the Auburn community of Seattle. 
 
-##References
+## References
 
 Presentation: https://www.canva.com/design/DAFFF3RLExM/Qh0b7_hVQsitJx8OZRjb7A/edit?utm_content=DAFFF3RLExM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 Data: https://info.kingcounty.gov/assessor/esales/Residential.aspx
