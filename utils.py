@@ -30,7 +30,7 @@ def evaluate_model(X_train, X_test, y_train, y_test, log = False):
     # Evaluate on train and test
     print(f"Train R2 Score: {r2_score(y_train, train_preds):.4f}")
     if log == True:
-        y_train_unlog = np.exmp1(y_train)
+        y_train_unlog = np.expm1(y_train)
         train_preds_unlog = np.expm1(train_preds)
         print(f"Train MAE Score: ${mean_absolute_error(y_train_unlog, train_preds_unlog):.4f}")
         print(f"Train RMSE Score: ${mean_squared_error(y_train_unlog, train_preds_unlog, squared=False):.4f}")
@@ -59,4 +59,4 @@ def evaluate_model(X_train, X_test, y_train, y_test, log = False):
     plt.legend()
     plt.show()
     
-    return train_preds, test_preds
+    return model.params
